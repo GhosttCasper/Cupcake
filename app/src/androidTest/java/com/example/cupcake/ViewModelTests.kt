@@ -24,6 +24,6 @@ class ViewModelTests {
         val viewModel = OrderViewModel()
         viewModel.setQuantity(12)
         viewModel.price.observeForever {}
-        assertEquals("$27.00", viewModel.price.value)
+        assertEquals("27,00 ₽", viewModel.price.value) //$27.00
     }
 }
